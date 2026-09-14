@@ -1,0 +1,132 @@
+:root {
+  color-scheme: light;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  color: #202124;
+  background: #ffffff;
+  letter-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+}
+
+header,
+main,
+footer {
+  width: min(760px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+header {
+  padding: 56px 0 28px;
+  border-bottom: 1px solid #dce2ea;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand img {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+}
+
+h1,
+h2 {
+  font-family: inherit;
+}
+
+h1 {
+  margin: 0;
+  font-size: 36px;
+  overflow-wrap: anywhere;
+  letter-spacing: 0;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  color: #58647a;
+}
+
+main {
+  padding: 30px 0 56px;
+}
+
+section {
+  margin: 0 0 32px;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  letter-spacing: 0;
+}
+
+p,
+li {
+  color: #3f4b61;
+  line-height: 1.65;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+a {
+  color: #1e429f;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.actions a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 16px;
+  border: 1px solid #afc4ff;
+  border-radius: 8px;
+  background: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+footer {
+  padding: 22px 0 38px;
+  border-top: 1px solid #dce2ea;
+  color: #748096;
+  font-size: 13px;
+}
+
+nav { width: min(760px, calc(100% - 40px)); margin: 0 auto; display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 14px 0; border-bottom: 1px solid #e3e3e3; }
+nav a { padding: 10px 0; text-underline-offset: 4px; }
+details { border-bottom: 1px solid #e3e3e3; padding: 4px 0; }
+summary { padding: 18px 0; cursor: pointer; font-weight: 600; line-height: 1.5; }
+details p { margin-top: 0; }
+section { scroll-margin-top: 24px; }
+a, p, li { overflow-wrap: anywhere; }
+:focus-visible { outline: 3px solid #087a55; outline-offset: 5px; }
+.skip { position: absolute; top: -100px; left: 20px; padding: 12px; background: white; }
+.skip:focus { top: 12px; }
+
+@media (max-width: 520px) {
+  header {
+    padding-top: 36px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
