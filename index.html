@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Itera Support</title>
+  <meta name="description" content="Help with Itera Practice Companion for iPhone and iPad: recovery, recordings, iCloud, exports, and privacy.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#help">Skip to help</a>
+  <header>
+    <div class="brand">
+      <img src="icon.png" alt="">
+      <div>
+        <h1>Itera</h1>
+        <p class="subtitle">Practice Companion support</p>
+      </div>
+    </div>
+  </header>
+  <nav aria-label="Support navigation"><a href="#sessions">Sessions</a><a href="#recordings">Recordings</a><a href="#data">Your data</a><a href="#contact">Contact</a><a href="privacy.html">Privacy</a></nav>
+  <main id="help">
+    <section id="sessions">
+      <h2>Your practice, uninterrupted</h2>
+      <details open><summary>Can I leave the practice screen?</summary><p>Yes. Minimize the session and use Agenda, Library, or Journal. The active-session bar lets you pause, resume, or return. Normal screen locking and background suspension do not stop elapsed time.</p></details>
+      <details><summary>What happens if Itera closes unexpectedly?</summary><p>Itera checkpoints your unfinished session on this device. On reopening, a recoverable session returns paused with its saved notes, focus tags, mode, and completed takes. Choose Include time away only if you continued practicing after the last checkpoint.</p><p>Recovery is not a guarantee against device damage, uninstalling the app, a failed disk write, or an unfinished recording that iOS could not finalize. A brief interval since the last successful checkpoint may be missing. Save important sessions and export irreplaceable recordings.</p></details>
+      <details><summary>How do I make a plan that fits me?</summary><p>Tap Practice plan on Agenda. Choose your experience, musical goals, practice style, and weekdays. Enter your own daily minutes, including multi-hour targets. Deadlines, memorization, classes, and spaced review are optional.</p></details>
+      <details><summary>Can daily music appear with A/B music?</summary><p>Choose Daily + A / B in your plan. In Library, open an item's schedule menu and select Daily, Day A, Day B, Days A and B, or Unscheduled. Daily work appears alongside the current rotation group. The cycle follows calendar days, including rest days.</p></details>
+      <details><summary>Why did the timer restart paused?</summary><p>Itera cannot know whether you practiced while its process was closed. Recovered timers start paused to avoid counting hours you did not practice. Ordinary background suspension, without process termination, continues the running timer normally.</p></details>
+    </section>
+    <section id="recordings">
+      <h2>Recordings and iCloud</h2>
+      <details><summary>Where are my recordings?</summary><p>Finished video sessions are saved to Photos when access is available, normally in the Itera album. Audio syncs through your private CloudKit storage because Photos does not store standalone audio. Completed takes and pending uploads stay in Itera's device storage until their destination and references are saved successfully.</p></details>
+      <details><summary>A recording is unavailable. What should I check?</summary><p>Check Photos access in iOS Settings, the original video in Photos, your Apple Account, and available iCloud/device storage. Connect to the internet if the original needs downloading, then use the recording's retry button. A video deleted from Photos cannot be recreated from its reference in Itera.</p><p>Do not uninstall Itera to troubleshoot: that can remove drafts and recordings waiting to upload. Export any local recordings first.</p></details>
+      <details><summary>My iPhone and iPad are not in sync</summary><p>Use the same Apple Account on both devices, enable iCloud for Itera, and enable iCloud Photos if you want videos on both. In Itera, open Agenda &gt; Settings &gt; iCloud and choose Sync now. Leave the app open while pending recordings finish. Allow time for Apple to download large media.</p></details>
+      <details><summary>Can I practice without iCloud or internet?</summary><p>Yes. Saved practice data and available recordings work locally. New media stays on this device while its destination is unavailable. Cross-device sync and teacher sharing need the relevant Apple services. iCloud storage is managed through your Apple Account.</p></details>
+      <details><summary>What can a teacher see?</summary><p>Nothing until you invite them using Apple's sharing sheet. An accepted participant can access and modify the shared practice space, including its notes and recording copies; this is not per-recording access. Sharing does not reveal your entire Photos library. Manage or stop access in Settings &gt; Teacher Sharing. Copies a recipient already exported remain under that recipient's control.</p></details>
+      <details><summary>Why are some features missing in Expo Go?</summary><p>Expo Go is a development preview. Custom PhotoKit cross-device identifiers, CloudKit sharing, and the widget require an installed Itera development or TestFlight build. A TestFlight or App Store build does not need a running computer.</p></details>
+    </section>
+    <section id="data">
+      <h2>Keep a copy. Keep control.</h2>
+      <details><summary>How do I export my practice history?</summary><p>Open Agenda &gt; Settings &gt; Your Data. Export practice data produces a JSON file of saved library items, notes, history, settings, goals, feedback, and recording references. Export journal CSV creates a spreadsheet-friendly history. Use the iOS share sheet to save to Files or a destination you trust.</p><p>Neither file includes audio or video bytes. Export individual recordings using their share button. Exported files contain private information and are not encrypted by Itera.</p></details>
+      <details><summary>How do I import a saved export?</summary><p>Finish any active session, then choose Import practice data in Settings. Select an Itera JSON export under 10 MB and confirm the merge. Existing newer entries and deletions are preserved. Existing profile preferences are kept unless this is a fresh installation. Import does not enable teacher sharing.</p><p>Recording references still require the original Photos assets or the corresponding Apple Account's CloudKit assets. A metadata export alone cannot restore deleted media or move private recordings to another person's Apple Account.</p></details>
+      <details><summary>What does a storage warning mean?</summary><p>A write or sync did not finish. Check available device and iCloud storage. Retry saving the draft or syncing. A session does not close as saved until the device write succeeds. If saved data cannot be read, Itera preserves it instead of overwriting it with an empty library; try the data check again after addressing storage.</p></details>
+      <details><summary>How do I delete my data?</summary><p>Delete individual entries in Library or Journal, or use Settings &gt; Privacy &amp; Support &gt; Erase Itera Data after finishing your active session. Full erasure removes app-held data and recovery copies and requests deletion of the private CloudKit zone and teacher shares. Offline cloud deletion is queued for the next successful connection.</p><p>Videos remain in Photos. Exports in Files, device backups, and copies held by recipients must be managed separately. Deleting the app alone does not erase iCloud records or Photos media.</p></details>
+    </section>
+    <section id="contact">
+      <h2>Get in touch</h2>
+      <p>For a bug or feature request, include the Itera version, iPhone/iPad model, iOS version, what you expected, and the steps that caused the problem. Do not post recordings, private notes, export files, passwords, or Apple Account details.</p>
+      <p>The GitHub issue tracker is public and requires a GitHub account. Anyone may read what you post.</p>
+      <div class="actions">
+        <a href="https://github.com/Travispb/itera-support/issues/new">Open a support request</a>
+        <a href="privacy.html">Privacy policy</a>
+      </div>
+    </section>
+  </main>
+  <footer>Itera Practice Companion for iPhone and iPad. <a href="privacy.html">Privacy policy</a></footer>
+</body>
+</html>
